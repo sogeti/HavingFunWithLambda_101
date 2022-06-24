@@ -33,3 +33,5 @@ override.tf.json
 
 #personal files
 *personal*
+#security files
+*.tfsec

@@ -10,7 +10,7 @@ dit doen we aan de hand van de volgende architectuur
 
 ![ ](./documentation/architecture.png)
 
-## Services 
+## Services
 
 Zoals we in de architectuur plaat kunnen zien hebben we een 3tal AWS Serivce in gebruik.
 

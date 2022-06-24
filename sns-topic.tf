@@ -1,3 +1,4 @@
+#tfsec:ignore:aws-sns-enable-topic-encryption
 resource "aws_sns_topic" "buienradar" {
   name         = "${var.prefix}-sns-topic"
   display_name = "101: Forecast for tomorrow"
