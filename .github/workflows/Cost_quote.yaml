@@ -14,4 +14,5 @@ jobs:
           echo Entering install phase..
           brew install infracost
           infracost --version
+          infracost register
           infracost breakdown --path .  --show-skipped --no-cache --no-color --format table --usage-file .infracost_usage.yml > tf-cost.md
