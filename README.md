@@ -78,3 +78,13 @@ Nu hebben we alles om daar werkelijk de verschillende "resources" binnen ons AWS
     terraform apply -var "mail_subscribers=[\"joumailaccount@domein.tld\"]"
 
 Nu hebben we de omgeving neergezet zoals hij in het design staat beschreven en krijgen we iedere dag de weersverwachting van morgen binnen.
+
+## Terraform Details
+
+Alle terraform details zijn terug te vinden in de [tf-documentation](tf-documentation.md)
+
+## Cost Estimation
+
+Kosten zijn altijd een belangrijk aspect binnen een cloud omgeving, vandaar dat er een kosten raming gemaakt is, zie [tf-cost](tf-cost.md)
+
+**_NOTE:_** Binnen de kosten raming houden we rekening met een geschat (normaal) verbruik. aangezien het gebruik/verbruik van iedereen kan verschillen. kan men geen rechten ontlenen aan de kosten raming.
