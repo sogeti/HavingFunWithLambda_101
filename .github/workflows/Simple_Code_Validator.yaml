@@ -1,0 +1,27 @@
+name: Simple Code Validator
+on:
+  push:
+
+
+jobs:
+
+
+  Validate-ImageBuilder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Phase
+        run: |
+            echo Entering install phase..
+            sudo apt-get install unzip
+            echo Downloading and installing tflint...
+            sudo curl -s https://raw.githubusercontent.com/terraform-linters/tflint/v0.34.1/install_linux.sh | bash
+            echo tflint api_version
+            tflint --version
+      - name: Initiate Terraform-validator - Module ImageBuilder
+        run: |
+            echo Entering validator phase..
+            # remove below mentioned echo, to run the validation
+            tflint --init
+            tflint .

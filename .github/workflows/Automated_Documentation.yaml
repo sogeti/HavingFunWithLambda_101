@@ -1,0 +1,37 @@
+---
+name: Automated Documentation
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  Documentation:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install prerequisites
+        run: |
+          #!/bin/bash
+
+          echo 'installing brew packages'
+          brew update
+          brew install terraform-docs
+
+      - name: Create documentation
+        run: |
+          terraform-docs markdown table . > tf-documentation.md
+
+      - name: Commit documentation
+        run: |
+          git config --local user.name "[BOT] Github Actions"
+          git config --local user.email "Actions@Github.com"
+
+          git add -A
+          git commit -m "[Automatic] Documentation Created"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master

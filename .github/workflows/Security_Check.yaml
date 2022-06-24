@@ -1,0 +1,19 @@
+
+---
+name: Security Check
+on:
+  push:
+  pull_request:
+
+jobs:
+  Security_Check:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install Phase
+        run: |
+          echo Entering install phase..
+          brew install tfsec
+          tfsec --version
+
+          tfsec .
