@@ -1,5 +1,12 @@
 # Having fun with Lambda - 101
 
+## Status
+[![Automated Documentation](https://github.com/jeroen-nijssen/HavingFunWithLambda_101/actions/workflows/Automated_Documentation.yaml/badge.svg?branch=main)](https://github.com/jeroen-nijssen/HavingFunWithLambda_101/actions/workflows/Automated_Documentation.yaml)
+[![Cost Estimation](https://github.com/jeroen-nijssen/HavingFunWithLambda_101/actions/workflows/Cost_quote.yaml/badge.svg?branch=main)](https://github.com/jeroen-nijssen/HavingFunWithLambda_101/actions/workflows/Cost_quote.yaml)
+[![Security Check](https://github.com/jeroen-nijssen/HavingFunWithLambda_101/actions/workflows/Security_Check.yaml/badge.svg?branch=main)](https://github.com/jeroen-nijssen/HavingFunWithLambda_101/actions/workflows/Security_Check.yaml)
+[![Simple Code Validator](https://github.com/jeroen-nijssen/HavingFunWithLambda_101/actions/workflows/Simple_Code_Validator.yaml/badge.svg?branch=main)](https://github.com/jeroen-nijssen/HavingFunWithLambda_101/actions/workflows/Simple_Code_Validator.yaml)
+
+
 AWS Lambda, is een serverless compute service van AWS. Deze dienst geeft jou de mogelijkheid om code te draaien zonder je zorgen te maken over de onderliggende compute. Lambda is vanuit zijn dienst hoog beschikbaar. De dienst zorgt zelf voor de automatische schaling, capaciteit provisioning en de noodzakelijke runtimes.
 
 Voor verder details over, van, voor AWS Lambda, adviseer ik je om te kijken op: [amazon.com](https://aws.amazon.com/lambda/)
