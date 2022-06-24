@@ -78,3 +78,7 @@ Nu hebben we alles om daar werkelijk de verschillende "resources" binnen ons AWS
     terraform apply -var "mail_subscribers=[\"joumailaccount@domein.tld\"]"
 
 Nu hebben we de omgeving neergezet zoals hij in het design staat beschreven en krijgen we iedere dag de weersverwachting van morgen binnen.
+
+## Terraform Details
+
+Alle terraform details zijn terug te vinden in de [tf-documentation](tf-documentation.md)
