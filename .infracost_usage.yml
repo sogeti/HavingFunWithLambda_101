@@ -1,0 +1,21 @@
+version: 0.1
+resource_usage:
+  aws_cloudwatch_log_group.my_log_group:
+    storage_gb: 1               # Total data stored by CloudWatch logs in GB.
+    monthly_data_ingested_gb: 1 # Monthly data ingested by CloudWatch logs in GB.
+    monthly_data_scanned_gb: 0   # Monthly data scanned by CloudWatch logs insights in GB.
+
+  aws_lambda_function.my_function:
+    monthly_requests: 32 # Monthly requests to the Lambda function.
+    request_duration_ms: 500 # Average duration of each request in milliseconds.
+
+  aws_sns_topic.my_sns_topic:
+    monthly_requests: 32 # Monthly requests to SNS.
+    request_size_kb: 64 # Size of requests to SNS
+    http_subscriptions: 0 # Number of HTTP/HTTPS subscriptions
+    email_subscriptions: 1 # Number of Email/Email-JSON subscriptions
+    kinesis_subscriptions: 0 # Number of Kinesis Firehose subscriptions
+    mobile_push_subscriptions: 0 # Number of Mobile Push subscriptions
+    macos_subscriptions: 0 # Number of MacOS subscriptions
+    sms_subscriptions: 0 # Number of SMS subscriptions
+    sms_notification_price: 0 # Average price for each SMS notification

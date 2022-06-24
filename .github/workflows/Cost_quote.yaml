@@ -1,0 +1,17 @@
+
+---
+name: Cost Estimation
+on:
+  pull_request:
+
+jobs:
+  Security_Check:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install Phase
+        run: |
+          echo Entering install phase..
+          brew install infracost
+          infracost --version
+          infracost breakdown --path .  --show-skipped --no-cache --no-color --format table --usage-file .infracost_usage.yml > tf-cost.md
