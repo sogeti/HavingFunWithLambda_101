@@ -19,8 +19,7 @@ jobs:
     steps:
       - name: Setup Infracost
       - uses: infracost/actions/setup@v2
-
-      - with:
+        with:
           api-key: ${{ secrets.INFRACOST_API_KEY }}
 
       - name: Checkout base branch
