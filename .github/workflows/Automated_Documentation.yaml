@@ -1,9 +1,6 @@
 ---
 name: Automated Documentation
 on:
-  push:
-    branches:
-      - main
   pull_request:
 
 jobs:
