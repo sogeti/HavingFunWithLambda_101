@@ -23,7 +23,7 @@ resource "aws_lambda_function" "buienradar" {
   #Environment Config
   environment {
     variables = {
-      TopicArn = "${aws_sns_topic.buienradar.arn}"
+      TopicArn = aws_sns_topic.buienradar.arn
     }
   }
   tags = {
