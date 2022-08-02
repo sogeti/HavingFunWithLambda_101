@@ -1,0 +1,11 @@
+
+
+cff-version: 1.2.0
+title: HavingFunWithLambda_101
+message: Creation of a sample lambda function invoked by cloudwatch events and sending messages towards SNS
+type: software
+authors:
+  - given-names: Jeroen
+    family-names: Nijssen
+repository-code: 'https://github.com/sogeti/HavingFunWithLambda_101'
+license: Apache License
