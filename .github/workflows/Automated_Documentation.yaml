@@ -1,7 +1,14 @@
 ---
 name: Automated Documentation
 on:
+  push:
+    branches: [ "main" ]
   pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
+  schedule:
+    - cron: '45 20 * * 5'
+
 
 jobs:
   Documentation:
@@ -18,6 +25,7 @@ jobs:
 
       - name: Create documentation
         run: |
+          rm -rf tf-documentation.md
           terraform-docs markdown table . > tf-documentation.md
 
       - name: Commit documentation
