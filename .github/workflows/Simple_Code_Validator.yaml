@@ -1,11 +1,11 @@
 name: Simple Code Validator
 on:
   push:
-
-
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
+    
 jobs:
-
-
   Validate:
     runs-on: ubuntu-latest
     steps:
