@@ -81,15 +81,15 @@ Dit commando, zal de code welke op [GitHub](https://github.com/sogeti/HavingFunW
 
 Nu hebben we alles om daar werkelijk de verschillende "resources" binnen ons AWS-account aan te maken. dit kunnen we doen door het volgende commando uit te voeren.
 
-**_NOTE:_** Hou er rekening mee dat je de waarde van joumailaccount@domein.tld aanpast naar jou eigen mail.
+**_NOTE:_** Hou er rekening mee dat je de waarde van jouwmailaccount@domein.tld aanpast naar jouw eigen mail.
 
 ### MacOS \ Unix
 
-    terraform apply -var 'mail_subscribers=["joumailaccount@domein.tld"]'
+    terraform apply -var 'mail_subscribers=["jouwmailaccount@domein.tld"]'
 
 ### Windows Command Prompt (do not use PowerShell on Windows)
 
-    terraform apply -var "mail_subscribers=[\"joumailaccount@domein.tld\"]"
+    terraform apply -var "mail_subscribers=[\"jouwmailaccount@domein.tld\"]"
 
 ![ ](./documentation/lambda_101_screenshot_3.png)
 
