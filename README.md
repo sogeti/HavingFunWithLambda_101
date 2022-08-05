@@ -7,8 +7,8 @@
 [![Security Check](https://github.com/sogeti/HavingFunWithLambda_101/actions/workflows/Security_Check.yaml/badge.svg?branch=main)](https://github.com/sogeti/HavingFunWithLambda_101/actions/workflows/Security_Check.yaml)
 [![Simple Code Validator](https://github.com/sogeti/HavingFunWithLambda_101/actions/workflows/Simple_Code_Validator.yaml/badge.svg?branch=main)](https://github.com/sogeti/HavingFunWithLambda_101/actions/workflows/Simple_Code_Validator.yaml)
 
-Lambda is een van de tweehonderd cloud services van AWS. Lambda is een serverless compute service. Deze dienst biedt de mogelijkheid om code te draaien zonder dat je hoeft na te denken over de onderliggende compute. Lambda is vanuit zijn dienst hoog beschikbaar. De dienst zorgt zelf voor de automatische schaling, capaciteit provisioning en de noodzakelijke runtimes. Het is Daarnaast wordt de code automatisch gemonitord en gelogd. Daarom niet nodig om te investeren in platformkennis en kan het team zich focussen op andere werkzaamheden.
-Bij Sogeti wordt Lambda toegepast in We ons volledige spectrum van applicatie en services. We gebruiken het bijvoorbeeld bij Sligro om geautomatiseerd het storage cluster te schalen (FSX). We gebruiken het bij PostNL om failovers te doen binnen gebouw beveiliging oplossing.
+Lambda is een van de tweehonderd cloud services van AWS. Lambda is een serverless compute service. Deze dienst biedt de mogelijkheid om code te draaien zonder dat je hoeft na te denken over de onderliggende compute. Lambda is vanuit zijn dienst hoog beschikbaar. De dienst zorgt zelf voor de automatische schaling, capaciteit provisioning en de noodzakelijke runtimes. Daarnaast wordt de code automatisch gemonitord en gelogd. Daarom is het niet nodig om te investeren in platformkennis en kan het team zich focussen op andere werkzaamheden.
+Bij Sogeti wordt Lambda toegepast in ons volledige spectrum van applicatie en services. We gebruiken het bijvoorbeeld bij Sligro om geautomatiseerd het storage cluster te schalen (FSX). We gebruiken het bij PostNL om failovers te doen binnen gebouw beveiliging oplossing.
 
 Voor verder details over, van, voor AWS Lambda, adviseer ik je om te kijken op: [amazon.com](https://aws.amazon.com/lambda/)
 
@@ -41,7 +41,7 @@ We beginnen aan de hand van de architectuur zoals hierboven op de afbeelding. In
 Om nu deze code echt te gaan deployen, zullen we eeste onze ontwikkelomgeving op moeten zetten.
 Hiervoor hebben we een aantal tools nodig;
 
-1. Terraform - [installatie instructies](https://learn.hashicorp.com/tutorials/terraform/install-cli), [executable](https://releases.hashicorp.com/terraform/1.2.2) (selecteer hier de juist voor jou OS.)
+1. Terraform - [installatie instructies](https://learn.hashicorp.com/tutorials/terraform/install-cli), [executable](https://releases.hashicorp.com/terraform/1.2.2) (selecteer hier de juist voor jouw OS.)
 
 2. Git - [installatie instructies](https://github.com/git-guides/install-git)
 
